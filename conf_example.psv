@@ -1,4 +1,4 @@
-daily_thing|*-*-* 13:00:00|/usr/bin/curl 'http://localhost:8080/message?token=MYTOKEN' -F "title=Daily Thing" -F "message=Details here." -F "priority=5"
-weekly_thing|Thu *-*-* 16:00:00|/usr/bin/curl 'http://localhost:8080/message?token=MYTOKEN' -F "title=Thurs Thing" -F "message=Details here." -F "priority=5"
-semi_annual|*-01,07-15 08:00:00|/usr/bin/notify-send "Semi-annual message here"
-multi_cal|*-*-* 08:00:00;*-*-* 20:00:00|/usr/bin/notify-send "Multiple times!"
+daily_thing|*-*-* 13:00:00|/usr/bin/curl 'http://localhost:8080/message?token=MYTOKEN' -F 'title=Daily Thing' -F 'message=Details here.' -F 'priority=5'
+weekly_thing|Thu *-*-* 16:00:00|/usr/bin/curl 'http://localhost:8080/message?token=MYTOKEN' -F 'title=Thurs Thing' -F 'message=Details here.' -F 'priority=5'
+semi_annual|*-01,07-15 08:00:00|/usr/bin/notify-send 'Semi-annual message here'
+multi_cal|*-*-* 08:00:00;*-*-* 20:00:00|/usr/bin/notify-send 'Multiple times!'
