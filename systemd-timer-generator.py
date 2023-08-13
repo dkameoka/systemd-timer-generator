@@ -126,14 +126,14 @@ class _Main:
 def _file_type(value):
     path = Path(value)
     if not path.is_file():
-        raise ValueError(f'{value} is not a file path')
+        raise argparse.ArgumentTypeError(f'{value} is not a file path')
     return path
 
 
 def _dir_type(value):
     path = Path(value)
     if not path.is_dir():
-        raise ValueError(f'{value} is not a directory path')
+        raise argparse.ArgumentTypeError(f'{value} is not a directory path')
     return path
 
 
